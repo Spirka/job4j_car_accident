@@ -17,6 +17,7 @@ public class ConsoleInput {
 
     /**
      * Method prints the question and scans the user's answer.
+     *
      * @param question question.
      * @return scanner.
      */

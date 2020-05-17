@@ -1,5 +1,7 @@
 package ru.job4j.di;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Class StartUI
  *
@@ -20,7 +22,8 @@ public class StartUI {
 
     /**
      * Constructor.
-     * @param store store.
+     *
+     * @param store        store.
      * @param consoleInput input.
      */
     public StartUI(Store store, ConsoleInput consoleInput) {
@@ -31,6 +34,7 @@ public class StartUI {
     /**
      * Method Add.
      * Adds value to store.
+     *
      * @param value value.
      */
     public void add(String value) {
@@ -49,6 +53,7 @@ public class StartUI {
 
     /**
      * Method Ask.
+     *
      * @param question to ask the user.
      * @return scanner.
      */

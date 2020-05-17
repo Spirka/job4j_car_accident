@@ -1,5 +1,7 @@
 package ru.job4j.di;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class Store {
     /**
      * Method Add.
      * Adds value to data.
+     *
      * @param value value.
      */
     public void add(String value) {
@@ -28,6 +31,7 @@ public class Store {
     /**
      * Method GetAll.
      * Gets all values from data.
+     *
      * @return List<String> of values.
      */
     public List<String> getAll() {
