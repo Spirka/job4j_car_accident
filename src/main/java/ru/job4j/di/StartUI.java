@@ -1,5 +1,6 @@
 package ru.job4j.di;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,23 +15,14 @@ public class StartUI {
     /**
      * Field store.
      */
+    @Autowired
     private Store store;
 
     /**
      * Field console input.
      */
+    @Autowired
     private ConsoleInput consoleInput;
-
-    /**
-     * Constructor.
-     *
-     * @param store        store.
-     * @param consoleInput input.
-     */
-    public StartUI(Store store, ConsoleInput consoleInput) {
-        this.store = store;
-        this.consoleInput = consoleInput;
-    }
 
     /**
      * Method Add.
