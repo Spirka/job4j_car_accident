@@ -13,10 +13,15 @@ public class SpringDI {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.scan("ru.job4j.di");
         context.refresh();
+        Store store = context.getBean(Store.class);
+        store.add("Kseniya Dergunova");
+        Store another = context.getBean(Store.class);
+        another.getAll().forEach(System.out::println);
         StartUI ui = context.getBean(StartUI.class);
         ui.ask("Привет, как дела?");
         ui.ask("Сколько тебе лет?");
         ui.add("Как быстро летит время!");
-        ui.print();
+        StartUI anotherUI = context.getBean(StartUI.class);
+        anotherUI.print();
     }
 }
