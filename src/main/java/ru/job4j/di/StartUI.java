@@ -1,6 +1,6 @@
 package ru.job4j.di;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * Class StartUI
@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Kseniya Dergunova
  * @since 17.05.2020
  */
+@Component
 public class StartUI {
 
     /**

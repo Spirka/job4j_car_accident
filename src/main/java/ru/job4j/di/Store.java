@@ -1,6 +1,6 @@
 package ru.job4j.di;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import java.util.List;
  * @author Kseniya Dergunova
  * @since 17.05.2020
  */
+@Component
 public class Store {
 
     /**
